@@ -1,0 +1,251 @@
+/* Import font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+/* Reset Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+input {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #2980b9;
+  display: flex;
+  align-items: center;
+}
+
+/* Container Padrão */
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+/* Styles */
+.top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+.logo a {
+  font-size: 34px;
+  font-weight: 800;
+  color: #fff;
+}
+
+nav.desktop {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav.desktop ul {
+  display: flex;
+  align-items: center;
+}
+
+nav.desktop ul li {
+  margin: 0 10px;
+}
+
+nav.desktop ul li:last-child {
+  margin-right: 0;
+}
+
+nav.desktop ul li a {
+  color: #fff;
+}
+
+#form input[type="text"] {
+  border: 0.5px solid transparent;
+  padding: 2px 10px;
+  border-radius: 30px;
+  color: #444;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #2980b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+}
+
+.body h2 {
+  font-size: 22px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.noticia-item {
+  height: 380px;
+  margin: 10px;
+  max-width: calc((100% / 3) - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 0.5px solid transparent;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.noticia-item:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.noticia-item:hover .noticia-button a {
+  background-color: #fff;
+  color: #34495e;
+}
+
+.noticia-button,
+.noticia-body,
+.noticia-title {
+  width: 100%;
+}
+
+.noticia-button {
+  justify-self: flex-end;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.noticia-button a {
+  color: #fff;
+  padding: 8px 36px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #34495e;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  border-radius: 4px;
+}
+
+.noticia-title {
+  font-size: 26px;
+  font-weight: 800;
+  height: 40px;
+  justify-self: flex-start;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.noticia-body {
+  text-align: justify;
+  display: flex;
+  flex: 1;
+}
+
+.form-cadastrar {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form-cadastrar input[type="text"] {
+  border: 0.5px solid #999;
+  padding: 10px 5px;
+  border-radius: 4px;
+  color: #444;
+}
+
+.text-area-label {
+  outline: none;
+  padding: 10px 5px;
+  color: #444;
+  border: 0.5px solid #999;
+  border-radius: 5px;
+  color: #444;
+}
+
+.form-cadastrar input[type="submit"] {
+  cursor: pointer;
+  padding: 10px 5px;
+  background-color: #34495e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.sucess,
+.flash,
+.form-cadastrar input[type="text"],
+.form-cadastrar textarea,
+.form-cadastrar input[type="submit"] {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.flash {
+  background-color: #f39c12;
+  display: flex;
+  padding: 10px 5px;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.sucess {
+  background-color: #2ecc71;
+  display: flex;
+  padding: 10px 5px;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  border-radius: 4px;
+}

@@ -1,0 +1,33 @@
+/* Responsive */
+@media screen and (max-width: 996px) {
+  .noticia-item {
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    height: auto;
+  }
+  .logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .noticia-item {
+    max-width: 100%;
+  }
+  .top-nav {
+    flex-direction: column;
+  }
+  nav.desktop ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .body h2 {
+    font-size: 18px;
+  }
+}
